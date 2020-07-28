@@ -1,0 +1,15 @@
+@import '../../../../docs/css/mixing.scss';
+
+.portfolioArea {
+  padding-top: 304px;
+  padding-bottom: 230px;
+
+  @media (max-width:550px) {
+    padding-top: 395px;
+  }
+
+  &.protfolioAreaStyleTwo {
+    padding-top: 104px;
+  }
+}
+

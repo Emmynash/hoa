@@ -1,0 +1,24 @@
+@import '../../../../docs/css/mixing.scss';
+
+.startupBrandArea {
+  background: $headingColor;
+  padding: 104px 0px 270px;
+
+  .brandItem {
+    display: block;
+    text-align: center;
+
+    img {
+      height: 50px;
+      object-fit: contain;
+      opacity: .5;
+      transition: all .4s ease-in-out 0s;
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}

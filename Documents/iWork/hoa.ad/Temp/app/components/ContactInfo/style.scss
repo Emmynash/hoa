@@ -1,0 +1,45 @@
+.contactInfoArea {
+  padding: 104px 0px;
+}
+
+.contactInfoLeft {
+  .infoLeftImg {
+    margin-top: 100px;
+  }
+}
+
+.contactInfoBtn {
+  background: #fff !important;
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  justify-content: flex-start;
+  padding: 0px 60px;
+
+  @media (max-width:767px) {
+    padding: 0px 30px;
+  }
+
+  .infoLeft {
+    margin-right: 35px;
+
+    @media (max-width:767px) {
+      margin-right: 15px;
+    }
+  }
+
+  .infoRight {
+    span {
+      text-transform: capitalize;
+      color: #758ca0;
+    }
+
+    h3 {
+      font-size: 30px;
+
+      @media (max-width:767px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

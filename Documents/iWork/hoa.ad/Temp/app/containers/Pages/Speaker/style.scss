@@ -1,0 +1,131 @@
+
+@import '../../../../docs/css/mixing.scss';
+
+.aboutPageArea {
+  padding: 104px 0;
+}
+
+.aboutPageImg {
+  height: 600px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (max-width:767px) {
+    height: 400px;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 100px;
+    color: #fff;
+    line-height: 100px;
+  }
+
+  span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+  }
+
+  &.overlay {
+    &::before {
+      background: $baseCOlor;
+      opacity: .8;
+    }
+  }
+}
+
+.aboutPageContent {
+  padding-left: 30px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width:991px) { 
+    padding-left: 0;
+  }
+
+  h2 {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 20px;
+
+    @media (max-width:991px) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    @media (max-width:767px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+
+  }
+
+  h3 {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    z-index: -1;
+    font-size: 215px;
+    -webkit-text-stroke: 1px rgba(5, 116, 255, 0.05);
+    color: transparent;
+
+    @media (max-width:1300px) {
+      font-size: 180px;
+    }
+
+    @media (max-width:767px) {
+      display: none;
+    }
+  }
+
+  strong {
+    font-size: 25px;
+    display: block;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+    @media (max-width:767px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 30px;
+
+      @media (max-width:767px) {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .videoBtn {
+        border: 1px solid #b4bfc9;
+        height: 60px;
+        width: 60px;
+        border-radius: 0px;
+        color: $headingColor;
+        transition: all .4s ease-in-out 0s;
+
+        &:hover {
+          border-color: $baseCOlor;
+          background: $baseCOlor;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

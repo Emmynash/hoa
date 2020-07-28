@@ -1,0 +1,73 @@
+@import '../../../docs/css/mixing.scss';
+
+.feedsItems {
+  li {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .feedItem {
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (max-width:550px) {
+        display: block;
+      }
+
+      .feedImg {
+        width: 80px;
+
+        @media (max-width:550px) {
+          width: 100%;
+        }
+
+        img {
+          width: 90px;
+          border-radius: 3px;
+
+          @media (max-width:550px) {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .feedContent {
+        width: calc(100% - 90px);
+        padding-left: 15px;
+
+        @media (max-width:767px) {
+          padding-left: 0;
+          width: 100%;
+        }
+
+        h5 {
+          font-size: 17px;
+          line-height: 20px;
+          font-weight: 600;
+          transition: all .4s ease-in-out 0s;
+          font-family: $basicFontFamily;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: 300;
+
+          i {
+            color: $baseCOlor;
+          }
+        }
+      }
+
+      &:hover {
+        .feedContent {
+          h5 {
+            color: $baseCOlor;
+          }
+        }
+      }
+    }
+  }
+}

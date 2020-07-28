@@ -1,0 +1,79 @@
+@import '../../../../docs/css/mixing.scss';
+
+.businessServiceArea {
+  padding: 104px 0 0;
+  margin-bottom: -200px;
+}
+
+.businessServiceSliderArea {
+  padding: 0px 20px;
+
+  @media (max-width:1300px) {
+    padding: 0;
+  }
+
+  .slick-slide {
+    div {
+      &:focus {
+        outline: none; 
+      }
+    }
+  }
+
+}
+
+.businessServiceWrap {
+  padding: 0px 16px;
+
+  .businessServiceItem {
+    background: #fff;
+    border: 4px solid #f4f9ff;
+    padding: 50px;
+    min-height: 495px;
+    transition: all .4s ease-in-out 0s;
+
+    &:hover {
+      border-color: $baseCOlor;
+    }
+
+    @media (max-width:1700px) {
+      padding: 50px 30px;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+
+      img {
+        margin-right: 30px;
+        height: 50px;
+      }
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .serviceList {
+      li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: 20px;
+          margin-right: 15px;
+          color: $baseCOlor;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

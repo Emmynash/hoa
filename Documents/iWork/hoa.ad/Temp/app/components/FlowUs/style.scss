@@ -1,0 +1,65 @@
+@import '../../../docs/css/mixing.scss';
+
+.flowusItem {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      width: 45px;
+      min-width: 45px;
+      height: 45px;
+      color: #c3c3c3;
+      border: 1px solid #c3c3c3;
+      font-size: 18px;
+      transition: all .4s ease-in-out 0s;
+
+      &:hover {
+        background: $baseCOlor;
+        border-color: $baseCOlor;
+        color: #fff;
+      }
+
+      &.facebook {
+        &:hover {
+          background: #3b5999;
+          border-color: #3b5999;
+        }
+      }
+
+      &.twitter {
+        &:hover {
+          background: #55acee;
+          border-color: #55acee;
+        }
+      }
+
+      &.google-plus {
+        &:hover {
+          background: #dd4b39;
+          border-color: #dd4b39;
+        }
+      }
+
+      &.linkedin {
+        &:hover {
+          background: #0077B5;
+          border-color: #0077B5;
+        }
+      }
+
+      &.youtube {
+        &:hover {
+          background: #cd201f;
+          border-color: #cd201f;
+        }
+      }
+    }
+  }
+}

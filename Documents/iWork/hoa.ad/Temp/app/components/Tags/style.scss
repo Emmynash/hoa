@@ -1,0 +1,28 @@
+@import '../../../docs/css/mixing.scss';
+
+.tagsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -3px -3px;
+
+  li {
+    padding: 3px;
+
+    a {
+      min-width: unset;
+      height: unset;
+      font-size: 14px;
+      text-transform: capitalize;
+      border: 1px solid #eaeaea;
+      color: $textColor;
+      padding: 7px 23px;
+      transition: all .4s ease-in-out 0s;
+
+      &:hover {
+        background: $baseCOlor;
+        color: #fff;
+        border-color: $baseCOlor;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.errorWrap {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    line-height: 70px;
+
+    @media (max-width:767px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  .errorimg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: -1;
+  }
+
+  a {
+    margin-bottom: 50px;
+  }
+}

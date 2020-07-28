@@ -1,0 +1,29 @@
+@import '../../../docs/css/mixing.scss';
+
+.searchField {
+  i {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $baseCOlor;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  fieldset {
+    border: 1px solid #d0e7fa !important;
+  }
+
+  .Mui-focused {
+    fieldset {
+      border-color: $baseCOlor !important;
+    }
+  }
+
+}

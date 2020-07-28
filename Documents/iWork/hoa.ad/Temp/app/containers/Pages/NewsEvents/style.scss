@@ -1,0 +1,20 @@
+.blogTwoGridArea {
+  padding: 104px 0px;
+
+  .blogWrap {
+    .blogImg {
+      img {
+        height: 380px;
+        object-fit: cover;
+
+        @media (max-width:991px) {
+          height: unset;
+        }
+      }
+
+      .avatarImg {
+        height: unset;
+      }
+    }
+  }
+}

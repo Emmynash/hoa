@@ -1,0 +1,25 @@
+@import '../../../docs/css/mixing.scss';
+
+.categoriesItems {
+  li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+
+      &:hover {
+        color: $baseCOlor;
+      }
+    }
+  }
+}

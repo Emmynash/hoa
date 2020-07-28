@@ -1,0 +1,15 @@
+.startupVideoArea {
+  padding-top: 90px;
+}
+
+.startupvideo {
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width:767px) {
+    min-height: 400px;
+  }
+}

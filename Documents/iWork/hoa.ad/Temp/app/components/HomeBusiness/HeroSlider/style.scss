@@ -1,0 +1,144 @@
+@import '../../../../docs/css/mixing.scss';
+
+.heroSliderItem {
+  min-height: 1050px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+
+  @media (max-width:1300px) {
+    min-height: 900px;
+  }
+
+  @media (max-width:767px) {
+    min-height: 730px;
+    padding-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #0d2335;
+    opacity: .35;
+    z-index: -1;
+  }
+
+  h4 {
+    font-size: 26px;
+    color: #fff;
+    font-family: $basicFontFamily;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+    @media (max-width:767px) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 100px;
+    color: #fff;
+    line-height: 90px;
+    padding-right: 100px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+
+    @media (max-width:1300px) {
+      font-size: 85px;
+      line-height: 90px;
+    }
+
+    @media (max-width:767px) {
+      font-size: 40px;
+      line-height: 50px;
+      padding-right: 0;
+    }
+  }
+
+  h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+    transform: translateX(-50%);
+    font-size: 400px;
+    width: 100%;
+    line-height: 400px;
+    text-align: center;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+    color: transparent;
+    z-index: -1;
+    text-transform: unset;
+
+    @media (max-width:1300px) {
+      font-size: 250px;
+      line-height: 250px;
+    }
+
+    @media (max-width:767px) {
+      font-size: 100px;
+      line-height: 150px;
+    }
+  }
+
+  .heroSliderBtn {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: 30px;
+
+      @media (max-width:767px) {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      button,
+      a {
+        width: 170px;
+        height: 70px;
+        border-radius: 0;
+        border: 2px solid $baseCOlor;
+        background: $baseCOlor;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #fff;
+
+        @media (max-width:767px) {
+          width: 139px;
+          height: 50px;
+        }
+
+        svg {
+          margin-left: 10px;
+          font-size: 10px;
+        }
+
+        &:hover {
+          background: #fff;
+          color: $baseCOlor;
+        }
+      }
+
+      a {
+        border-color: #00247e;
+        background: #00247e;
+
+        &:hover {
+          background: #fff;
+          color: #00247e;
+        }
+      }
+    }
+  }
+}

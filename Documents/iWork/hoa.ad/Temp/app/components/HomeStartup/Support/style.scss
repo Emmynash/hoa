@@ -1,0 +1,53 @@
+.suportArea {
+  margin-top: -200px;
+}
+
+.sponsorWrap {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(5, 16, 255, .05);
+
+
+
+  .sponsorImg {
+    width: 45%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width:767px) {
+      width: 100%;
+    }
+  }
+
+  .sponsorContent {
+    width: 55%;
+    padding: 50px 40px;
+
+    @media (max-width:767px) {
+      width: 100%;
+      padding: 40px 20px;
+    }
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+
+    a {
+      font-weight: 600;
+    }
+  }
+}

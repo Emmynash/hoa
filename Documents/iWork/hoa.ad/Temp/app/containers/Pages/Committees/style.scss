@@ -1,0 +1,84 @@
+@import '../../../../docs/css/mixing.scss';
+
+.faqWrapper {
+  margin: 0 !important;
+  box-shadow: none !important;
+  border: 2px solid #e0e9f4;
+  margin-top: -2px !important;
+  background: transparent;
+  margin-bottom: 20px !important;
+
+  &:last-child {
+    margin-bottom: 0px !important;
+
+  }
+
+  &::before {
+    display: none !important;
+  }
+
+  &.faqWrapperExpanded {
+    .faqHeader {
+      border-bottom: 2px solid #e0e9f4;
+
+      p {
+        color: $baseCOlor;
+
+        &::before {
+          content: "-";
+        }
+      }
+    }
+  }
+
+  .faqHeader {
+    padding: 0 30px;
+    min-height: 60px;
+
+    .Mui-expanded {
+      margin: 0 !important;
+    }
+
+    p {
+      color: #a4b5c3;
+      font-size: 16px;
+      font-weight: 600;
+      color: $headingColor;
+
+      &::before {
+        content: "+";
+        margin-right: 25px;
+        transition: all .3s ease-in-out 0s;
+      }
+
+      span {
+        color: $baseCOlor;
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .faqDetails {
+    padding: 25px 30px;
+  }
+}
+
+.faqPageImg {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .playBtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+
+    img {
+      width: unset;
+    }
+  }
+}

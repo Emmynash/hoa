@@ -1,0 +1,139 @@
+@import '../../../../docs/css/mixing.scss';
+
+.historyItems {
+  .historyItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 50px;
+    position: relative;
+
+    @media (max-width:767px) {
+      display: block;
+      padding: 100px 10px 30px;
+      border: 1px solid #efefef;
+      margin-bottom: 32px;
+    }
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      content: "";
+      background: #efefef;
+
+      @media (max-width:767px) {
+        display: none;
+      }
+    }
+
+    h3 {
+      position: absolute;
+      width: 100%;
+      background: #fff;
+      left: 0;
+      top: 0;
+      text-align: center;
+      color: $baseCOlor;
+      font-size: 40px;
+      line-height: 50px;
+
+      @media (max-width:767px) {
+        top: 20px;
+      }
+    }
+
+    .historyImg {
+      width: 45%;
+
+      @media (max-width:767px) {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      img {
+        @media (max-width:767px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .historyContent {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (max-width:767px) {
+        width: 100%;
+      }
+
+      h4 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+
+        @media (max-width:991px) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &:nth-child(odd) {
+
+      .historyImg {
+        order: 2;
+      }
+
+      .historyContent {
+        order: 1;
+        text-align: right;
+      }
+    }
+
+    &:nth-child(even) {}
+  }
+}
+
+.historyArea {
+  .plusBtn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #efefef;
+    border-radius: 0px;
+    font-size: 40px;
+    font-family: 'Gilroy-Regular';
+    color: $baseCOlor;
+    transition: all .4s ease-in-out 0s;
+
+    &:hover {
+      background: $baseCOlor;
+      color: #fff;
+      border-color: $baseCOlor;
+    }
+
+    span {
+      line-height: 0;
+    }
+  }
+
+  .sectionTitle {
+    h3 {
+      padding: 0px 200px;
+
+      @media (max-width:1300px) {
+        padding: 0px 100px;
+      }
+
+      @media (max-width:991px) {
+        padding: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import '../../../../docs/css/mixing.scss';
+
+
+.activityWrapper {
+  background: #ffffff;
+  border: 10px solid $baseCOlor;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -150px;
+
+  @media (max-width:767px) {
+    padding: 0;
+  }
+
+  .activityItem {
+    width: 25%;
+    padding: 40px 35px;
+    display: flex;
+    border-left: 1px solid #e0eeff;
+
+    @media (max-width:1300px) {
+      padding: 30px 15px;
+    }
+
+    @media (max-width:991px) {
+      width: 50%;
+      padding: 30px;
+
+      &:nth-child(3) {
+        border-left: none;
+      }
+
+      &:nth-child(1) {
+        border-left: none;
+        border-bottom: 1px solid #e0eeff;
+      }
+
+      &:nth-child(2) {
+        border-bottom: 1px solid #e0eeff;
+      }
+    }
+
+    @media (max-width:767px) {
+      width: 100%;
+      border-bottom: 1px solid #e0eeff;
+    }
+
+    &:first-child {
+      border-left: none;
+    }
+
+    .activityIcon {
+      margin-right: 25px;
+
+      i {
+        font-size: 50px;
+        color: $baseCOlor;
+      }
+    }
+
+    .activityContent {
+      .custom-count {
+        font-size: 40px;
+        display: inline-block;
+        font-weight: 700;
+        font-family: 'Gilroy-Bold';
+        color: $headingColor;
+      }
+
+      span {
+        color: $headingColor;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Gilroy-Bold';
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.activityStyleTwo {
+  .activityWrapper {
+    position: relative;
+    z-index: 11;
+  }
+}

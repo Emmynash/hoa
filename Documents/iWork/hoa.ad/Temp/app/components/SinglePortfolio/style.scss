@@ -1,0 +1,57 @@
+@import '../../../docs/css/mixing.scss';
+
+.portfolioWrap {
+  transition: all .4s ease-in-out 0s;
+
+  &:hover {
+    transform: translateY(-10px);
+
+    .portfolioContent {
+      box-shadow: 0px 4px 15px rgba(206, 216, 230, .2);
+    }
+  }
+.portfolioImg {
+  img{
+    height: 400;
+    width: 300;
+  }
+}
+  .portfolioContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 290px;
+    background: #fff;
+    padding: 30px;
+    margin: -60px auto 0;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    transition: all .4s ease-in-out 0s;
+
+    .portfolioContentLeft {
+      h3 {
+        font-size: 24px;
+      }
+
+      span {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: $baseCOlor;
+        display: block;
+      }
+    }
+
+    a {
+      display: inline-block;
+      color: #cbdae6;
+      font-size: 30px;
+      line-height: 25px;
+
+      &:hover {
+        color: $baseCOlor;
+      }
+    }
+  }
+}

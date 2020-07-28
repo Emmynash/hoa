@@ -1,0 +1,105 @@
+@import '../../../docs/css/mixing.scss';
+
+.serviceItem {
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(207, 228, 255, 0.2);
+  overflow: hidden;
+  transition: all .4s ease-in-out 0s;
+
+  .serviceImg {
+    overflow: hidden;
+    position: relative;
+
+    a {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 100px;
+      width: 100px;
+      background: #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: all .4s ease-in-out 0s;
+
+      i {
+        position: absolute;
+        width: unset;
+        transition: all .8s ease-in-out 0s;
+        font-size: 40px;
+
+        &.hover {
+          transform: translateX(-150px);
+        }
+
+        &.hover {
+          color: $baseCOlor;
+        }
+      }
+
+      &:hover {
+
+        i {
+          &.normal {
+            transform: translateX(150px);
+          }
+
+          &.hover {
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      transform: scale(1);
+      transition: all.4s ease-in-out 0s;
+    }
+  }
+
+  .serviceContent {
+    padding: 40px 30px;
+    text-align: center;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: $textColor;
+      margin-bottom: 25px;
+    }
+
+    span {
+      display: inline-block;
+      color: $baseCOlor;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 16px 32px 0px rgba(207, 228, 255, 0.8);
+
+    .serviceImg {
+      img {
+        transform: scale(1.15);
+      }
+
+      a {
+        i {
+          &.normal {
+            transform: translateX(150px);
+          }
+
+          &.hover {
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+  }
+}

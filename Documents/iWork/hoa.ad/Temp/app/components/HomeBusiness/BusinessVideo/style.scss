@@ -1,0 +1,47 @@
+.businessVideoArea {
+  min-height: 800px;
+  padding: 104px 0px 0;
+  margin-bottom: 145px;
+
+  @media (max-width:767px) {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 55px;
+    line-height: 65px;
+
+    @media (max-width:1300px) {
+      font-size: 45px;
+      line-height: 55px;
+    }
+
+    @media (max-width:767px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.businessVideoImg {
+  border: 15px solid #fff;
+  margin-bottom: -175px;
+  position: relative;
+  margin-top: 20px;
+
+  .playBtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

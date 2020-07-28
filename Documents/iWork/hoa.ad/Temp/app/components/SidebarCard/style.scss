@@ -1,0 +1,19 @@
+.sidebarCard {
+  padding: 40px 30px;
+  border: 1px solid #d0e7fa;
+  border-radius: 3px;
+  margin-bottom: 40px;
+
+  h4 {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &::before {
+      content: url(../../images/icons/line.png);
+      line-height: 0;
+      margin-right: 15px;
+    }
+  }
+}
