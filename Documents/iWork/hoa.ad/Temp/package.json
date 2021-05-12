@@ -111,7 +111,7 @@
     "sass-loader": "^8.0.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "4.2.0",
-    "swiper": "^5.0.4"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@babel/cli": "7.4.3",
